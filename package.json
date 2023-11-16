@@ -1,0 +1,42 @@
+{
+  "name": "@board-game-toolbox/plugin-template",
+  "version": "0.1.12",
+  "description": "plugin template for board-game-toolbox",
+  "bgt": {
+    "name": "BGT Plugin Template",
+    "desc": "a simple plugin template for board-game-toolbox",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADMUlEQVR42u1aPWgUURA+LTxNJcFGLUzARMVCLARFESwECyOIaJWImEYQLVKIFooIJv4EwZ9S0Cb+VeIPiJ0iAREFY+QMHCanF4mHFhJ/sAjnrOzBEfLNvdl9b997tzvwVfe+mZ3v3s7Ozr5cLrptJbwmlAi9uRTaMKFah4VpE2BilgBtmQBNbrV7vtoATVsThhWSb+qa8CLtAqjeAkFtOJgVwUyATIBMAF+th/BOWPFVME7o8yH5qmGcc1mAsQQECNDiy31tCktcFeBaAsmPut7tmRbglMsCzCNMgQs/JPCzlhFgpetPgsvgwp8KfJwBPt760AdsYv69xYo+ioB/AqxfTnhM+JbALRjEeERYyiXwCZB7FJJfxwRvn2P9MkIloadPPcqEVpTEJUC6ryBAP+C+AevvWEi+husoiY2A8JewqIEAaPccB+unLArwmUukBEh7Gc4GJhh6WapaBrSLgPCA4VwBnFcMxzkB9hA+GAhUIHQJBGi0Lu7vUACTFfmjDwIkveUyAaTFKaIpxykbTL4kuDCdM4MWaREcM/QavFMgwHvCKg3Jrw59RdppE8JnunR9YJPMxf0idMdIfn/oA/mfdEGA0wq750ZO9qkt6FZvKvg96YIAgd3VPEkaVfD3MM6MULcAgR0jzERtW4VPsquEBXEEWAHWj8cQILAdhB+KAtQ61sIcxRXxfxL2SYrIV+FUtwDWdwpidioKUGE6TMRfI62if3Kyb//o8/l6A02L5LdIzdV84GSG4TwHnM0+CtAKnHxnOE8AZ7uPArQDJ0WGcxtwdvsowDbg5BnDuQA4R029uBji/7de4GSI4RwGnEEfBTgLnJxnOF2Ac89HAW4BJ0cifBN46ZsAuzSPxn4TDmhsZbVPgOutz+AF9CvEHzAYf0BFAJMToYpC/C+GP4dZ236q29B2/EyA1AqQD0dPusbU3Hgr71r8oO8f0TSNUfknR2adFbAafwthWtczVLCVp8PYtuPD4yz1TUyU0XR3yOV8Fx2Izy4IDjV1xJjLd8Q8d5xEfPjDEChWUsuHvqTJJxXf+gEF6wckMgEyAVIuQNli8JID8Y2dB1A9L2A1/j+Tbbat+NdKUQAAAABJRU5ErkJggg=="
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "icon": "node scripts/icon-to-base64.js && prettier --write package.json"
+  },
+  "files": [
+    "dist",
+    "icon.png"
+  ],
+  "dependencies": {
+    "@types/node": "^20.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.0.3",
+    "rollup": "^3.29.1",
+    "sharp": "^0.32.6",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
